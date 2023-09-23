@@ -14,7 +14,7 @@ export default function Home() {
         </p>
 
         <p className={`${styles.textoDev} ${styles.marginTop2rem}`}>
-          //Parte de teste para os desenvolvedores
+          Parte de teste para os desenvolvedores
         </p>
         <ul>
           {episodios.map((episodio, index) => (
