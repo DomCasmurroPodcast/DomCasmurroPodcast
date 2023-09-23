@@ -128,8 +128,10 @@ table {
   border-spacing: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Roboto:wght@400;500;700&family=Staatliches&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Roboto:wght@400;500;700&family=Staatliches&display=swap");
 
-p {
+p,
+h1,
+h2 {
   font-family: "Roboto", sans-serif;
 }
