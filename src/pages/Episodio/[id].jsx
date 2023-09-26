@@ -19,6 +19,21 @@ export default function Page() {
           Descricao: <br />
           {episodio?.descricao}
         </p>
+
+        {/* <iframe
+          frameborder="0"
+          width="800"
+          height="100"
+          src={episodio?.audioSrc}>
+        </iframe> */}
+
+
+
+        {/*https://travis.media/embed-google-drive-audio-html*/}
+        <audio class="player" controls preload="none">
+            <source src="https://docs.google.com/uc?export=open&id=14tGZGBq3TToC77FeQs-PlqHq4cfLWnlL" type="audio/mp3" />
+        </audio>
+
       </>
     );
   }
