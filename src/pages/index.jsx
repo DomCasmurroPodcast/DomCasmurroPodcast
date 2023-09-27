@@ -1,4 +1,4 @@
-import styles from "@/styles/Home.module.css";
+import styles from "@/styles/Home.module.scss";
 import episodios from "@/utils/episodios";
 import Link from "next/link";
 

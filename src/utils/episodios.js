@@ -2,7 +2,7 @@ const episodios = [
   {
     id: 1,
     nome: "Episodio 1",
-    audioSrc: "https://drive.google.com/file/d/14tGZGBq3TToC77FeQs-PlqHq4cfLWnlL/preview",
+    audioSrc: "https://drive.google.com/file/d/1f5-Y8tTafqdSFwrRJAyNOwBHYT4YH8gk/preview",
     alunos: "João Vitor P, Sebastião",
     descricao: "A sociedade conteporanea é completamente maluca...",
     turma: "2ºA Informática"
