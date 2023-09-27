@@ -1,6 +1,7 @@
 import styles from "@/styles/Home.module.css";
 import episodios from "@/utils/episodios";
 import Link from "next/link";
+import SearchBar from "@/components/SearchBar";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <p className={`${styles.textoDev} ${styles.marginTop2rem}`}>
           Parte de teste para os desenvolvedores
         </p>
+        <SearchBar/>
         <ul>
           {episodios.map((episodio, index) => (
             <li key={episodio.id}>
