@@ -2,11 +2,13 @@ import { useRouter } from "next/router";
 import episodios from "@/utils/episodios";
 import returnSrc from "@/utils/returnSrc";
 import styles from "@/styles/Episodio.module.scss";
+import { useState } from "react";
 
 export default function Page() {
   const router = useRouter();
   const episodio = episodios[router.query.id - 1];
   const src = returnSrc(episodio.audioSrc);
+  const [podeCarregar, setPodeCarregar] = useState(false);
 
   if (router.query.id > episodios.length) {
     return <h1>Erro, esta pagina não existe</h1>;
@@ -23,7 +25,9 @@ export default function Page() {
           {episodio?.descricao}
         </p>
 
-        <audio className={styles.player} controls preload="none">
+        {!podeCarregar && <p>O Audio está carregando, espere um momento!</p>}
+
+        <audio onCanPlayThrough={()=> setPodeCarregar(true)} className={styles.player} controls preload="none">
             <source src={src} type="audio/mp3" />
         </audio>
       </>

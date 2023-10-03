@@ -15,6 +15,22 @@ const episodios = [
     descricao: "A maluca conteporanea é completamente sociedade...",
     turma: "2ºA Informática"
   },
+  {
+    id: 3,
+    nome: "Episodio 3",
+    audioSrc: "/",
+    alunos: "João Vitor P, Sebastião",
+    descricao: "A sociedade conteporanea é completamente maluca...",
+    turma: "2ºA Informática"
+  },
+  {
+    id: 4,
+    nome: "Episodio 4",
+    audioSrc: "/",
+    alunos: "Jonas P Vitor, Sxobastião",
+    descricao: "A maluca conteporanea é completamente sociedade...",
+    turma: "2ºA Informática"
+  },
 ];
 
 export default episodios;
