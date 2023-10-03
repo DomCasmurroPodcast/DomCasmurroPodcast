@@ -41,4 +41,22 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Comentários do Pereira
 
-Por enquanto nada aq.
+#### Audio do Episódio
+
+
+Link do site que contém a maneira que faremos:
+https://travis.media/embed-google-drive-audio-html
+
+Pelo que tudo aparenta, certos audios não rodam nessa maneira ☝
+A teoria é que isso se dá pelo fato de certos audios serem grandes demais e o drive não consegue verificar virus
+> Google Drive does not scan files larger than 100 MB[...]
+
+
+**Exemplo pego do site:**
+```js
+<audio className={styles.player} controls preload="none">
+    <source src="https://docs.google.com/uc?export=open&id=13s1pwgpWZAbpwYgaFa_MgdxiKGOILCtX" type="audio/mp3" /> 
+</audio>
+```
+
+[Nosso código](src/pages/Episodio/[id].jsx)
