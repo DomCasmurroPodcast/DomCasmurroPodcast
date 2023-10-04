@@ -5,7 +5,8 @@ const episodios = [
     audioSrc: "https://drive.google.com/file/d/1f5-Y8tTafqdSFwrRJAyNOwBHYT4YH8gk/preview",
     alunos: "João Vitor P, Sebastião",
     descricao: "A sociedade conteporanea é completamente maluca...",
-    turma: "2ºA Informática"
+    turma: "2ºA Informática",
+    capitulos: "1, 2, 3, 4 e 5"
   },
   {
     id: 2,
@@ -13,7 +14,8 @@ const episodios = [
     audioSrc: "https://drive.google.com/file/d/14tGZGBq3TToC77FeQs-PlqHq4cfLWnlL/preview",
     alunos: "Jonas P Vitor, Sxobastião",
     descricao: "A maluca conteporanea é completamente sociedade...",
-    turma: "2ºA Informática"
+    turma: "2ºA Informática",
+    capitulos: "1, 2, 3, 4 e 5"
   },
   {
     id: 3,
@@ -21,7 +23,8 @@ const episodios = [
     audioSrc: "/",
     alunos: "João Vitor P, Sebastião",
     descricao: "A sociedade conteporanea é completamente maluca...",
-    turma: "2ºA Informática"
+    turma: "2ºA Informática",
+    capitulos: "1, 2, 3, 4 e 5"
   },
   {
     id: 4,
@@ -29,7 +32,8 @@ const episodios = [
     audioSrc: "/",
     alunos: "Jonas P Vitor, Sxobastião",
     descricao: "A maluca conteporanea é completamente sociedade...",
-    turma: "2ºA Informática"
+    turma: "2ºA Informática",
+    capitulos: "1, 2, 3, 4 e 5"
   },
 ];
 
