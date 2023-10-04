@@ -38,3 +38,25 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Comentários do Pereira
+
+#### Audio do Episódio
+
+
+Link do site que contém a maneira que faremos:
+https://travis.media/embed-google-drive-audio-html
+
+Pelo que tudo aparenta, certos audios não rodam nessa maneira ☝
+A teoria é que isso se dá pelo fato de certos audios serem grandes demais e o drive não consegue verificar virus
+> Google Drive does not scan files larger than 100 MB[...]
+
+
+**Exemplo pego do site:**
+```js
+<audio className={styles.player} controls preload="none">
+    <source src="https://docs.google.com/uc?export=open&id=13s1pwgpWZAbpwYgaFa_MgdxiKGOILCtX" type="audio/mp3" /> 
+</audio>
+```
+
+[Nosso código](src/pages/Episodio/[id].jsx)
