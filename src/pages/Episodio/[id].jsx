@@ -15,7 +15,7 @@ export default function Page() {
   const episodio = episodios[router.query.id - 1];
   const src = returnSrc(episodio.audioSrc);
   const [podeCarregar, setPodeCarregar] = useState(false);
-
+  const [audioClicked, setAudioClicked] = useState(false);
   
   if (router.query.id > episodios.length) {
     return <h1>Erro, esta pagina não existe</h1>;
@@ -32,9 +32,20 @@ export default function Page() {
           {episodio?.descricao}
         </p>
 
-        {!podeCarregar && <p>O Audio está carregando, espere um momento!</p>}
+        {(audioClicked && !podeCarregar) && //Aqui deve botar uma animação de loading enquanto o audio carrega
+        <div>
+          <p>O Audio está carregando, espere um momento!</p>
+        </div>}
 
-        <audio onCanPlayThrough={()=> setPodeCarregar(true)} className={styles.player} controls preload="none">
+        <audio 
+        onPlay={()=>{ 
+          //console.log("Foi clicado");
+          if(!audioClicked)setAudioClicked(true);
+        }}
+        onCanPlayThrough={()=> setPodeCarregar(true)} 
+        className={styles.player} 
+        controls 
+        preload="none">
             <source src={src} type="audio/mp3" />
         </audio>
       </>
