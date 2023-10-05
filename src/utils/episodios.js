@@ -2,7 +2,7 @@ const episodios = [
   {
     id: 1,
     nome: "Episodio 1",
-    audioSrc: "/",
+    audioSrc: "https://drive.google.com/file/d/1f5-Y8tTafqdSFwrRJAyNOwBHYT4YH8gk/preview",
     capitulos: "1, 2, 3, 4, 5",
     alunos: "Amanda, Bruna",
     descricao: "A sociedade conteporanea é completamente maluca...",

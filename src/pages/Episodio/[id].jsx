@@ -22,34 +22,49 @@ export default function Page() {
   } else {
     return (
       <>
-        {/* <h1>Pagina {router.query.id}</h1> */}
         <div className={styles.titleContainer}>
           <h1>Dom Casmurro Podcast</h1>
           <h2>{episodio?.nome}</h2>
-          <p>Alunos: {episodio?.alunos}</p>
+          <h3>Capítulos {episodio?.capitulos}</h3>
         </div>
-        <p>Turma: {episodio?.turma}</p>
+        {/* <p>Turma: {episodio?.turma}</p>
         <p>
           Descricao: <br />
           {episodio?.descricao}
-        </p>
+        </p> */}
 
-        {(audioClicked && !podeCarregar) && //Aqui deve botar uma animação de loading enquanto o audio carrega
-        <div>
-          <p>O Audio está carregando, espere um momento!</p>
-        </div>}
+        <div className={styles.content}>
 
-        <audio 
-        onPlay={()=>{ 
-          //console.log("Foi clicado");
-          if(!audioClicked)setAudioClicked(true);
-        }}
-        onCanPlayThrough={()=> setPodeCarregar(true)} 
-        className={styles.player} 
-        controls 
-        preload="none">
-            <source src={src} type="audio/mp3" />
-        </audio>
+          <audio 
+          onPlay={()=>{ 
+            //console.log("Foi clicado");
+            if(!audioClicked)setAudioClicked(true);
+          }}
+          onCanPlayThrough={()=> setPodeCarregar(true)} 
+          className={styles.audioPlayer} 
+          controls 
+          preload="none">
+              <source src={src} type="audio/mp3" />
+          </audio>
+
+          {(audioClicked && !podeCarregar) && //Aqui deve botar uma animação de loading enquanto o audio carrega
+          <div className={styles.loading}>
+            <div className={styles.ldsRing}><div></div><div></div><div></div><div></div></div>
+            <p>Espere um pouquinho, a áudio já vai carregar</p>
+          </div>
+          }
+
+          <div className={styles.informacoes}>
+            <p className={styles.alunos}><b>Alunos: </b>{episodio?.alunos}</p>
+            <p className={styles.alunos}><b>Turma: </b>{episodio?.turma} informática</p>
+          </div>
+
+          <p className={styles.descricao}>
+            <b>Descrição:</b><br/>
+            {episodio?.descricao}
+          </p>
+
+        </div>
       </>
     );
   }
