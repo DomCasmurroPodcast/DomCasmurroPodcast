@@ -3,6 +3,8 @@ import episodios from "@/utils/episodios";
 import returnSrc from "@/utils/returnSrc";
 import styles from "@/styles/Episodio.module.scss";
 import { useState } from "react";
+import EpisodioButton from "@/components/EpisodioButton";
+import Link from "next/link";
 
 export async function getServerSideProps(context) {
   return {
@@ -13,6 +15,8 @@ export async function getServerSideProps(context) {
 export default function Page() {
   const router = useRouter();
   const episodio = episodios[router.query.id - 1];
+  const episodioAnterior = episodios[router.query.id - 2];
+  const episodioProximo = episodios[router.query.id];
   const src = returnSrc(episodio.audioSrc);
   const [podeCarregar, setPodeCarregar] = useState(false);
   const [audioClicked, setAudioClicked] = useState(false);
@@ -63,6 +67,27 @@ export default function Page() {
             <b>Descrição:</b><br/>
             {episodio?.descricao}
           </p>
+
+          <div className={styles.footer}>
+
+
+            <div className={`${styles.epAnterior_container} ${
+              router.query.id == 1 ? styles.none : null 
+              //Condicional pra aparecer apenas quando não é o primeiro ep, talvez seja bom mudar
+            }`}>
+              <p>Episódio Anterior:</p>
+              <Link className={styles.link} href={`/Episodio/${episodioAnterior?.id}`}>
+                <EpisodioButton
+                  nome={episodioAnterior?.nome}
+                  capitulos={episodioAnterior?.capitulos}
+                  alunos={episodioAnterior?.alunos}
+                  key={episodioAnterior?.nome}/>
+              </Link>
+            </div>
+            
+
+
+          </div>
 
         </div>
       </>

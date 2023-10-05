@@ -1,3 +1,7 @@
+.none{
+    display: none;
+}
+
 .titleContainer{
     width: 100vw;
     height: 250px;
@@ -32,6 +36,7 @@
 .content{
     display: flex;
     flex-direction: column;
+    max-width: 2400px;
 
     .audioPlayer{
         width: 87%;
@@ -76,6 +81,16 @@
         
         b{
             font-weight: bold;
+        }
+    }
+
+    .footer{
+        width: 87%;
+        justify-self: center;
+        margin: auto;
+        .link{
+            text-decoration: none;
+            color: #000;
         }
     }
 }
