@@ -1,3 +1,4 @@
+import EpisodioButton from "@/components/EpisodioButton";
 import styles from "@/styles/Home.module.scss";
 import episodios from "@/utils/episodios";
 import Link from "next/link";
@@ -19,8 +20,15 @@ export default function Home() {
         <ul>
           {episodios.map((episodio, index) => (
             <li key={episodio.id}>
-              <Link href={`/Episodio/${episodio.id}`}>{episodio.nome}</Link>
-            </li>
+              <Link className={styles.episodioLink} href={`/Episodio/${episodio.id}`}>
+                <EpisodioButton 
+                key={index} 
+                nome={episodio.nome} 
+                capitulos={episodio.capitulos}  
+                alunos={episodio.alunos}/>
+              </Link>
+              </li>
+            
           ))}
         </ul>
       </div>
