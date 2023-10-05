@@ -6,7 +6,8 @@ const episodios = [
     capitulos: "1, 2, 3, 4, 5",
     alunos: "Amanda, Bruna",
     descricao: "A sociedade conteporanea é completamente maluca...",
-    turma: "2ºA"
+    turma: "2ºA Informática",
+    capitulos: "1, 2, 3, 4 e 5"
   },
   {
     id: 2,
