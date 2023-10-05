@@ -2,8 +2,13 @@ import EpisodioButton from "@/components/EpisodioButton";
 import styles from "@/styles/Home.module.scss";
 import episodios from "@/utils/episodios";
 import Link from "next/link";
+import SearchBar from "@/components/SearchBar";
+import SearchResults from "@/components/SearchResults";
+import { useState } from "react";
 
 export default function Home() {
+  const [searchValue, setSearchValue] = useState("");
+
   return (
     <>
       <div className={styles.homeContainer}>
@@ -17,6 +22,9 @@ export default function Home() {
         <p className={`${styles.textoDev} ${styles.marginTop2rem}`}>
           Parte de teste para os desenvolvedores
         </p>
+        <SearchBar exportValue={setSearchValue}/>
+
+        <h2>Todos Episódios:</h2>
         <ul>
           {episodios.map((episodio, index) => (
             <li key={episodio.id}>
@@ -31,6 +39,10 @@ export default function Home() {
             
           ))}
         </ul>
+
+        <h2>Episódios pesquisados:</h2>
+        <SearchResults searchValue={searchValue} />
+
       </div>
     </>
   );
