@@ -5,23 +5,16 @@ import Link from "next/link";
 import SearchBar from "@/components/SearchBar";
 import SearchResults from "@/components/SearchResults";
 import { useState } from "react";
+import Cabecalho from "@/components/cabecalho";
+import Rodape from "@/components/rodape";
+
 
 export default function Home() {
   const [searchValue, setSearchValue] = useState("");
 
   return (
     <>
-      <div className={styles.homeContainer}>
-        <h1 className={styles.titulo}>Dom Casmurro Podcast</h1>
-
-        <p className={`${styles.texto} ${styles.marginTop2rem}`}>
-          Por enquanto não temos nada por aqui :(
-          <br /> mas espere logo log teremos um incrível podcast para você ouvir!
-        </p>
-
-        <p className={`${styles.textoDev} ${styles.marginTop2rem}`}>
-          Parte de teste para os desenvolvedores
-        </p>
+    {/*Exemplo do joão de como usar o map e os componentes SearchBar e SearchResults
         <SearchBar exportValue={setSearchValue}/>
 
         <h2>Todos Episódios:</h2>
@@ -44,6 +37,10 @@ export default function Home() {
         <SearchResults searchValue={searchValue} />
 
       </div>
+      */}
+
+    <Cabecalho />
+    <Rodape />
     </>
   );
 }
