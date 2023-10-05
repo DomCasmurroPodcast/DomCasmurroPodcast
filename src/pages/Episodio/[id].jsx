@@ -22,10 +22,12 @@ export default function Page() {
   } else {
     return (
       <>
-        <h1>Pagina {router.query.id}</h1>
-
-        <h2>{episodio?.nome}</h2>
-        <p>Alunos: {episodio?.alunos}</p>
+        {/* <h1>Pagina {router.query.id}</h1> */}
+        <div className={styles.titleContainer}>
+          <h1>Dom Casmurro Podcast</h1>
+          <h2>{episodio?.nome}</h2>
+          <p>Alunos: {episodio?.alunos}</p>
+        </div>
         <p>Turma: {episodio?.turma}</p>
         <p>
           Descricao: <br />
