@@ -31,7 +31,7 @@ const episodios = [
     nome: "Episodio 4",
     audioSrc: "/",
     capitulos: "18, 19, 20, 21, 22",
-    alunos: "Emylly Samylly, Laís Amaro, João Phelipe",
+    alunos: "Patrícia O. Silva, Leonardo Pereira",
     descricao: "A maluca conteporanea é completamente sociedade...",
     turma: "2ºA"
   },
