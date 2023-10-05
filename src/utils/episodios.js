@@ -12,6 +12,7 @@ const episodios = [
     id: 2,
     nome: "Episodio 2",
     audioSrc: "https://drive.google.com/file/d/14tGZGBq3TToC77FeQs-PlqHq4cfLWnlL/preview",
+    capitulos: "1, 2, 3, 4, 5",
     alunos: "Jonas P Vitor, Sxobastião",
     descricao: "A maluca conteporanea é completamente sociedade...",
     turma: "2ºA Informática"
