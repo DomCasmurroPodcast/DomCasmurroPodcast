@@ -2,10 +2,10 @@ const episodios = [
   {
     id: 1,
     nome: "Episodio 1",
-    audioSrc: "https://drive.google.com/file/d/1f5-Y8tTafqdSFwrRJAyNOwBHYT4YH8gk/preview",
+    audioSrc: "https://drive.google.com/file/d/11lINxK011UrKpjjq8a0qelNuU1U-30Mu/view?usp=sharing",
     capitulos: "1, 2, 3, 4, 5",
     alunos: "Amanda, Bruna",
-    descricao: "A sociedade conteporanea é completamente maluca...",
+    descricao: "O 1° episódio do Podcast foi apresentado pelas alunas Amanda e Bruna e consiste na apresentação do mesmo juntamente com uma breve introdução da história que será contada.",
     turma: "2ºA Informática",
     capitulos: "1, 2, 3, 4 e 5"
   },
