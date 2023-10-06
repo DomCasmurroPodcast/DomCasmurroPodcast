@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import episodios from "@/utils/episodios";
 import returnSrc from "@/utils/returnSrc";
 import styles from "@/styles/Episodio.module.scss";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import EpisodioButton from "@/components/EpisodioButton";
 import Button from "@/components/Button";
 import Link from "next/link";
@@ -19,8 +19,14 @@ export default function Page() {
   const episodioAnterior = episodios[router.query.id - 2];
   const episodioProximo = episodios[router.query.id];
   const src = returnSrc(episodio.audioSrc);
+  const [windowWidth, setWindowWidth] = useState();
+  
   const [podeCarregar, setPodeCarregar] = useState(false);
   const [audioClicked, setAudioClicked] = useState(false);
+
+  useEffect(()=>{
+    setWindowWidth(window.innerWidth);
+  },[])
   
   if (router.query.id > episodios.length) {
     return <h1>Erro, esta pagina não existe</h1>;
@@ -61,7 +67,7 @@ export default function Page() {
 
           <div className={styles.informacoes}>
             <p className={styles.alunos}><b>Alunos: </b>{episodio?.alunos}</p>
-            <p className={styles.alunos}><b>Turma: </b>{episodio?.turma} informática</p>
+            <p className={styles.turma}><b>Turma: </b>{episodio?.turma} informática</p>
           </div>
 
           <p className={styles.descricao}>
@@ -72,7 +78,7 @@ export default function Page() {
           <div className={styles.footer}>
 
 
-           {!(router.query.id==1) && 
+           {!(router.query.id==1) && (windowWidth)>700 &&  
            <div className={styles.epAnterior}>
               <p>Episódio Anterior:</p>
               <Link className={styles.linkEp} href={`/Episodio/${episodioAnterior?.id}`}>
@@ -84,8 +90,19 @@ export default function Page() {
               </Link>
             </div>}
             
+            {!(router.query.id==1) && (windowWidth)<700 &&  
+           <div className={styles.epAnterior}>
+              <p>Episódio Anterior:</p>
+              <Link className={styles.linkEp} href={`/Episodio/${episodioAnterior?.id}`}>
+                <Button text="" className={styles.epButton}>
+                <svg width="23" height="23" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.900025 11.5L19.8 0.588078L19.8 22.4119L0.900025 11.5Z" fill="#193441"/>
+                </svg>
+                </Button>
+              </Link>
+            </div>}
           
-            {!(router.query.id==episodios.length) && 
+            {!(router.query.id==episodios.length) && (windowWidth)>700 &&
             <div className={styles.epProximo}>
               <p>Próximo episódio:</p>
               <Link className={styles.linkEp} href={`/Episodio/${episodioProximo?.id}`}>
@@ -95,7 +112,22 @@ export default function Page() {
                   alunos={episodioProximo?.alunos}
                   key={episodioProximo?.nome}/>
               </Link>
-            </div>}
+            </div>
+            }
+
+            {!(router.query.id==episodios.length) && (windowWidth)<700 &&
+              <div className={styles.epProximo}>
+                <p>Próximo episódio:</p>
+                <Link className={styles.linkEp} href={`/Episodio/${episodioProximo?.id}`}>
+                  <Button text="">
+                  <svg width="23" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.315 11.5L0.585797 22.4119L0.585798 0.588081L18.315 11.5Z" fill="#193441"/>
+                  </svg>
+
+                </Button>
+                </Link>
+              </div>
+            }
 
             <Link className={styles.linkBtn} href={`/`}>
               <Button className={styles.button} text="Voltar a todos episódios">
