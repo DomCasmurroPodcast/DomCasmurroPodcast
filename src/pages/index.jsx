@@ -26,7 +26,7 @@ export default function Home() {
         
         <div className={styles.episodios}>
 
-          <div className={styles.todosEpisodios}>
+          {searchValue == ""  && <div className={styles.todosEpisodios}>
             <h3>Todos Episódios:</h3>
             <div className={styles.todosEpisodios_list}>
               {episodios.map((episodio, index)=>(
@@ -41,7 +41,13 @@ export default function Home() {
                 </div>
               ))}
             </div>
+          </div>}
+
+          {searchValue != "" &&
+          <div className={styles.resultadosPesuisa}>
+            <SearchResults searchValue={searchValue}/>
           </div>
+          }
 
         </div>
 
