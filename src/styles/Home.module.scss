@@ -68,7 +68,44 @@
 .mainContent {
   padding-top: 37px;
 
-  .searchBarHome{
+  .searchBarHome {
     margin: auto;
+  }
+
+  .episodios {
+    padding-top: 62px;
+    display: flex;
+    justify-self: center;
+    margin: auto;
+
+    .linkEpButton {
+      text-decoration: none;
+      color: black;
+    }
+
+    .todosEpisodios {
+      max-width: 1200px;
+      width: 79%;
+      margin: auto;
+      
+      h3 {
+        font-size: 32px;
+        font-weight: 300;
+        font-family: "Roboto", sans-serif;
+        margin-bottom: 26px;
+      }
+
+      .todosEpisodios_list {
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: space-between;
+        row-gap: 30px;
+
+        .episodioButton_container {
+          
+        }
+      }
+    }
   }
 }
