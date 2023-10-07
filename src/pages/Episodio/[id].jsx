@@ -86,7 +86,7 @@ export default function Page() {
                   nome={episodioAnterior?.nome}
                   capitulos={episodioAnterior?.capitulos}
                   alunos={episodioAnterior?.alunos}
-                  key={episodioAnterior?.nome}/>
+                  />
               </Link>
             </div>}
             
@@ -110,7 +110,7 @@ export default function Page() {
                   nome={episodioProximo?.nome}
                   capitulos={episodioProximo?.capitulos}
                   alunos={episodioProximo?.alunos}
-                  key={episodioProximo?.nome}/>
+                  />
               </Link>
             </div>
             }
