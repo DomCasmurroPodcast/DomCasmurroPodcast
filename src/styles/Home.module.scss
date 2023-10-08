@@ -109,3 +109,24 @@
     }
   }
 }
+
+//footer
+.footer{
+  background-color: #abbac2;
+  width: 100%;
+  margin-top: 150px;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+
+  P{
+    font-family: 16px;
+    font-family: "Roboto", sans-serif;
+    width: 79%;
+    margin: auto;
+  }
+
+  .gitHub_link{
+    margin: auto;
+  }
+}
