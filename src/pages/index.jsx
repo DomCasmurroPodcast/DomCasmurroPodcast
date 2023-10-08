@@ -44,7 +44,7 @@ export default function Home() {
           </div>}
 
           {searchValue != "" &&
-          <div className={styles.resultadosPesuisa}>
+          <div className={styles.resultadosPesquisa}>
             <SearchResults searchValue={searchValue}/>
           </div>
           }

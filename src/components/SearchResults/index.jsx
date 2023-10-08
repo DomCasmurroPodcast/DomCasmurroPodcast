@@ -1,13 +1,19 @@
 import Link from "next/link";
 import styles from "./SearchResults.module.scss";
 import episodios from "@/utils/episodios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import EpisodioButton from "../EpisodioButton";
 
 export default function SearchResults({ searchValue, ...props }) {
   const [haveNmResults, setHaveNmResults] = useState(false);
   const [haveAlResults, setHaveAlResults] = useState(false);
   const [haveCapResults, setHaveCapResults] = useState(false);
+
+  useEffect(() => {
+    setHaveAlResults(false);
+    setHaveCapResults(false);
+    setHaveNmResults(false);
+  }, [searchValue]);
 
   return (
     <>
@@ -16,7 +22,7 @@ export default function SearchResults({ searchValue, ...props }) {
       <div className={styles.results}>
         {haveNmResults && <h3>Por número do episódio:</h3>}
 
-        <div>
+        <div className={styles.episodios_list}>
           {episodios.map((episodio, index) => {
             if (
               episodio.nome.toUpperCase().includes(searchValue.toUpperCase())
@@ -47,7 +53,7 @@ export default function SearchResults({ searchValue, ...props }) {
       <div className={styles.results}>
         {haveAlResults && <h3>Por nome dos alunos:</h3>}
 
-        <div>
+        <div className={styles.episodios_list}>
           {episodios.map((episodio, index) => {
             if (
               episodio.alunos.toUpperCase().includes(searchValue.toUpperCase())
@@ -78,7 +84,7 @@ export default function SearchResults({ searchValue, ...props }) {
       <div className={styles.results}>
         {haveCapResults && <h3>Por número dos capítulos:</h3>}
 
-        <div>
+        <div className={styles.episodios_list}>
           {episodios.map((episodio, index) => {
             if (
               episodio.capitulos

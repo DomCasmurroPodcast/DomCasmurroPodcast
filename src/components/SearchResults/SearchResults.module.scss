@@ -4,10 +4,21 @@
 }
 
 .results{
+    max-width: 1200px;
+    width: 79%;
+    margin: auto;
+
     h3{
         font-size: 32px;
         font-weight: 300;
         font-family: "Roboto", sans-serif;
         margin-bottom: 26px;
+    }
+
+    .episodios_list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 30px;
     }
 }
