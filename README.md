@@ -25,7 +25,7 @@ A teoria é que isso se dá pelo fato de certos audios serem grandes demais e o 
 
 [Nosso código](src/pages/Episodio/[id].jsx)
 
-### Peuqeno Bug em [Episódios](src/pages/Episodio/[id].jsx)
+### Pequeno Bug em [Episódios](src/pages/Episodio/[id].jsx)
 
 O bug acontecia quando era clicado para ir pro proximo episódio, mas o _src_ dentro da tag de audio continuava com o _src_ antigo, isso acontecia devido ao fato da tag não re-renderizar.
 Para resolver isso precisavamos fazer a tag re-renderizar quando houver a troca do episódio, então utilizamos esta [maneira](https://stackoverflow.com/questions/56649094/how-to-reload-a-component-part-of-page-in-reactjs) para concertar o problema.
