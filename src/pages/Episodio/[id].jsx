@@ -7,20 +7,18 @@ import EpisodioButton from "@/components/EpisodioButton";
 import Button from "@/components/Button";
 import Link from "next/link";
 
-// export async function getServerSideProps(context) {
-//   return {
-//       props: {},
-//   };
-// }
+export async function getServerSideProps(context) {
+  return {
+    props: {},
+  };
+}
 
 export default function Page() {
   const router = useRouter();
   const episodio = episodios[router.query.id - 1];
   const episodioAnterior = episodios[router.query.id - 2];
   const episodioProximo = episodios[router.query.id];
-  const src = returnSrc(
-    episodio?.audioSrc ? episodio.audioSrc : null
-  );
+  const src = returnSrc(episodio?.audioSrc ? episodio.audioSrc : null);
   const [windowWidth, setWindowWidth] = useState();
 
   const [podeCarregar, setPodeCarregar] = useState(false);
