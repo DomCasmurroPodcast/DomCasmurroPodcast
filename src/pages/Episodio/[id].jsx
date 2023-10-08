@@ -7,11 +7,11 @@ import EpisodioButton from "@/components/EpisodioButton";
 import Button from "@/components/Button";
 import Link from "next/link";
 
-export async function getServerSideProps(context) {
-  return {
-      props: {},
-  };
-}
+// export async function getServerSideProps(context) {
+//   return {
+//       props: {},
+//   };
+// }
 
 export default function Page() {
   const router = useRouter();
