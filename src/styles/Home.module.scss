@@ -158,3 +158,21 @@
 }
   
 }
+
+@media (max-width: 400px) {
+
+  .firstView{
+    h1{
+      font-size: 80px;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+
+  .firstView{
+    h1{
+      font-size: 60px;
+    }
+  }
+}
