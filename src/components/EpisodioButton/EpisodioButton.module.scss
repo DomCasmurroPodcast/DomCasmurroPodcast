@@ -1,0 +1,34 @@
+.mainContainer{
+    width: 270px;
+    height: 115px;
+    border-radius: 22px;
+    background-color: #D7D7D7; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    flex-shrink: 0;
+
+    p{
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .nome{
+        font-weight: 700;
+    }
+
+    .capitulos{
+        font-weight: 500;
+    }
+
+    .alunos{
+        font-weight: 300;
+    }
+}
+
+.mainContainer:hover{
+    background-color: #cacaca;
+}
