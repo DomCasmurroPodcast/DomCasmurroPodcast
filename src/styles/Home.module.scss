@@ -130,3 +130,31 @@
     margin: auto;
   }
 }
+
+//mobile
+
+@media (max-width: 700px) {
+
+  .firstView{
+    h1{
+      font-size: 100px;
+    }
+  }
+
+  .todosEpisodios{
+
+    h3{
+      text-align: center;
+    }
+
+  .todosEpisodios_list{
+    justify-content: center;
+    .episodioButton_container{
+      margin: auto;
+    }
+
+  }
+
+}
+  
+}
