@@ -122,10 +122,10 @@ const Episódios = [
   {
     id: 14,
     nome: "Episódio 14",
-    audioSrc: "/",
+    audioSrc: "https://drive.google.com/file/d/15AXBfg-ZAUcPlZXdvRLE-Xw0hj1WqIIf/view?usp=drive_link",
     capitulos: "71, 72, 73, 74, 75, 76",
     alunos: "Alisson Dias, Thauan Wictor",
-    descricao: ".",
+    descricao: "O trabalho foi realizado por Alisson Dias e Thauan Wictor Muniz, no podcast tentamos fazer de uma forma dinâmica onde intercalamos muitas falas.",
     turma: "2ºB"
   },
   {
@@ -149,10 +149,10 @@ const Episódios = [
   {
     id: 17,
     nome: "Episódio 17",
-    audioSrc: "/",
+    audioSrc: "https://drive.google.com/file/d/1sonIVumkpIYu3E0vpqLqxpTBqncSqb7b/view?usp=drive_link",
     capitulos: "89, 90, 91, 92, 93, 94",
     alunos: "Luiz Guilhermy, Adrielle",
-    descricao: ".",
+    descricao: "Este episódio foi apresentado pelos discentes Adriele e Luiz, que continua com o próximo trecho da história do nosso seguidor Dom Casmurro. Referente aos capítulos 89 a 94",
     turma: "2ºA"
   },
   {
@@ -161,16 +161,16 @@ const Episódios = [
     audioSrc: "/",
     capitulos: "95, 96, 97, 98, 99, 100",
     alunos: "Janine, Júlia Eduarda",
-    descricao: ".",
+    descricao: "Não tem esse episodio ainda.",
     turma: "2ºB"
   },
   {
     id: 19,
     nome: "Episódio 19",
-    audioSrc: "/",
+    audioSrc: "https://drive.google.com/file/d/1d10vpF57NtmnSr5AIzoqs5AoHa7B4nE6/view?usp=drive_link",
     capitulos: "101, 102, 103, 104, 105, 106",
     alunos: "Rafaela, Matheus Bassi, Max",
-    descricao: ".",
+    descricao: "(Sem descrição)",
     turma: "2ºA"
   },
   {
@@ -188,7 +188,7 @@ const Episódios = [
     audioSrc: "/",
     capitulos: "113, 114, 115, 116, 117, 118",
     alunos: "Emilly Lemes, Dalila",
-    descricao: ".",
+    descricao: "Nos capítulos 113 a 118, a trama de Dom Casmurro continua a se desenrolar de maneira intrigante. Esses capítulos são fundamentais para o desenvolvimento da trama e aprofundam os conflitos e a complexidade dos personagens, mantendo os leitores envolvidos na história e ansiosos para descobrir a verdade por trás dos eventos misteriosos que ocorrem em Dom Casmurro.",
     turma: "2ºA"
   },
   {
@@ -203,10 +203,10 @@ const Episódios = [
   {
     id: 23,
     nome: "Episódio 23",
-    audioSrc: "/",
+    audioSrc: "https://drive.google.com/file/d/1R6l3oUCicyARrQUud-Rsga47BHj7VY8Q/view?usp=drive_link",
     capitulos: "125, 126, 127, 128, 129, 130",
     alunos: "Dayane, Alana",
-    descricao: ".",
+    descricao: "(Sem descrição)",
     turma: "2ºA"
   },
   {
