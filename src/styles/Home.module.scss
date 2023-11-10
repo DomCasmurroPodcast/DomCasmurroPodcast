@@ -108,6 +108,14 @@
         content: "";
         display: auto;
       }
+
+      @media (min-width: 1370px) {
+        ::after {
+          width: 578px;
+          content: "";
+          display: auto;
+        }
+      }
     }
 
     .resultadosPesquisa {
