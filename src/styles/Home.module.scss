@@ -87,7 +87,7 @@
       max-width: 1200px;
       width: 79%;
       margin: auto;
-      
+
       h3 {
         font-size: 32px;
         font-weight: 300;
@@ -99,79 +99,83 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        row-gap: 30px;
 
+        row-gap: 30px;
+      }
+
+      ::after {
+        width: 270px;
+        content: "";
+        display: auto;
       }
     }
 
-    .resultadosPesquisa{
+    .resultadosPesquisa {
       width: 100%;
     }
   }
 }
 
 //footer
-.footer{
+.footer {
   background-color: #abbac2;
   width: 100%;
   margin-top: 150px;
-  padding-top: 60px;
+  padding-top: 40px;
   display: flex;
   flex-direction: column;
 
-  P{
+  P {
     font-family: 16px;
     font-family: "Roboto", sans-serif;
     width: 79%;
     margin: auto;
   }
 
-  .gitHub_link{
-    margin: auto;
+  .github_text {
+    margin: 18px 0 10px 0;
+    p {
+      text-align: center;
+      font-size: 12px;
+      color: #263942;
+    }
   }
 }
 
 //mobile
 
 @media (max-width: 700px) {
-
-  .firstView{
-    h1{
+  .firstView {
+    h1 {
       font-size: 100px;
     }
   }
 
-  .todosEpisodios{
-
-    h3{
+  .todosEpisodios {
+    h3 {
       text-align: center;
     }
 
-  .todosEpisodios_list{
-    justify-content: center;
-    .episodioButton_container{
-      margin: auto;
+    .todosEpisodios_list {
+      justify-content: center;
+      .episodioButton_container {
+        margin: auto;
+      }
     }
-
   }
-
-}
-  
 }
 
 @media (max-width: 400px) {
-
-  .firstView{
-    h1{
+  .firstView {
+    h1 {
       font-size: 80px;
     }
   }
 }
 
 @media (max-width: 350px) {
-
-  .firstView{
-    h1{
+  .firstView {
+    h1 {
       font-size: 60px;
     }
   }
