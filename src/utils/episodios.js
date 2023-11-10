@@ -115,7 +115,7 @@ const Episódios = [
     audioSrc: "/",
     capitulos: "65, 66, 67, 68, 69, 70",
     alunos: "Amara, Gabriel",
-    descricao: ".",
+    descricao: "Não tem esse episodio ainda.",
     turma: "2ºA ",
     
   },
@@ -143,7 +143,7 @@ const Episódios = [
     audioSrc: "https://drive.google.com/file/d/1DUjzJp0dK4DkDGtVvEpGLr0Sf70AsYCB/view?usp=drive_link",
     capitulos: "83, 84, 85, 86, 87, 88",
     alunos: "Sidnei Salustiano, Pedro Baltazar, Erick Brayan",
-    descricao: ".",
+    descricao: "Resumo dos capítulos de podcast do 83 a 88 do livro Dom Casmurro, feito por Sidnei, Pedro e Erick Brayan. Foi tentado ser feito de uma forma de dinâmica de podcast, onde são feitos comentários na narração.",
     turma: "2ºB"
   },
   {
@@ -185,7 +185,7 @@ const Episódios = [
   {
     id: 21,
     nome: "Episódio 21",
-    audioSrc: "/",
+    audioSrc: "https://drive.google.com/file/d/1OKo0bZU34UK0cp0PvXXloKjdzgc-Ewu1/view?usp=drive_link",
     capitulos: "113, 114, 115, 116, 117, 118",
     alunos: "Emilly Lemes, Dalila",
     descricao: "Nos capítulos 113 a 118, a trama de Dom Casmurro continua a se desenrolar de maneira intrigante. Esses capítulos são fundamentais para o desenvolvimento da trama e aprofundam os conflitos e a complexidade dos personagens, mantendo os leitores envolvidos na história e ansiosos para descobrir a verdade por trás dos eventos misteriosos que ocorrem em Dom Casmurro.",
