@@ -8,7 +8,7 @@
   h1 {
     font-family: "DM Serif Text", "Roboto", serif;
     color: #263942;
-    font-size: 164px;
+    font-size: 60px;
     text-align: center;
     justify-self: center;
     align-self: center;
@@ -213,6 +213,14 @@
     }
     padding: 12px;
     grid-row: 3;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .firstView {
+    h1 {
+      font-size: 164px;
+    }
   }
 }
 
