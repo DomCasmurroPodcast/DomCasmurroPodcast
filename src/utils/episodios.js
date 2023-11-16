@@ -158,10 +158,10 @@ const Episódios = [
   {
     id: 18,
     nome: "Episódio 18",
-    audioSrc: "/",
+    audioSrc: "https://drive.google.com/file/d/1OXFPlsCm4R5Va_cPoT_3OwylVBQJEGe2/view?usp=drive_link",
     capitulos: "95, 96, 97, 98, 99, 100",
     alunos: "Janine, Júlia Eduarda",
-    descricao: "Não tem esse episodio ainda.",
+    descricao: "Podcast feito por Janine e Júlia. Ciclos antigos se fecham e novos se abrem. Bentinho finalmente resolve promessas do passado e consegue seguir sua vida.",
     turma: "2ºB"
   },
   {
