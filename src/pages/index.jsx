@@ -8,11 +8,11 @@ import { useRef, useState } from "react";
 import Image from "next/image";
 
 export default function Home() {
-  const ref = useRef(null)
+  const ref = useRef(null);
   const [searchValue, setSearchValue] = useState("");
 
   const handleClick = () => {
-    ref.current?.scrollIntoView({ behavior: 'smooth' });
+    ref.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -68,15 +68,46 @@ export default function Home() {
         </div>
 
         <div className={styles.footer}>
-          <p>Este projeto de ensino visa trabalhar/apresentar o gênero Podcast contextualizado a partir de uma atividade de retextualização de um clássico da Literatura Brasileira, o livro do Realismo literário, Dom Casmurro de Machado de Assis. O projeto foi realizado com os alunos do 2º A e B do Curso Técnico Integrado em Informática (Ensino Médio), turnos da manhã e tarde, do Instituto Federal de Educação, Ciência e Tecnologia de Rondônia, campus Vilhena, situado na BR-174, Km 3 S/n - Zona Urbana, Vilhena.</p>
-          
+          <Image
+            className={styles.imagem_turma}
+            width={600}
+            height={800}
+            alt="imagem 2A"
+            src={"/imgs/img2a2.jpeg"}
+          />
+          <div className={styles.footer_texto}>
+            <p>
+              Este projeto de ensino visa trabalhar/apresentar o gênero Podcast
+              contextualizado a partir de uma atividade de retextualização de um
+              clássico da Literatura Brasileira, o livro do Realismo literário,
+              Dom Casmurro de Machado de Assis. O projeto foi realizado com os
+              alunos do 2º A e B do Curso Técnico Integrado em Informática
+              (Ensino Médio), turnos da manhã e tarde, do Instituto Federal de
+              Educação, Ciência e Tecnologia de Rondônia, campus Vilhena,
+              situado na BR-174, Km 3 S/n - Zona Urbana, Vilhena.
+            </p>
 
-          <div className={styles.github_text}>
-          <p>Veja o código da página <Link title="Veja código da página no GitHub" className={styles.gitHub_link} href="https://github.com/DomCasmurroPodcast/DomCasmurroPodcast.github.io">
-            aqui
-            {/* <Image className={styles.gitHub_image} src="/imgs/GitHub_Logo.png" width={100} height={50} alt="Veja código no GitHub"/> */}
-          </Link></p>
+            <div className={styles.github_text}>
+              <p>
+                Veja o código da página{" "}
+                <Link
+                  title="Veja código da página no GitHub"
+                  className={styles.gitHub_link}
+                  href="https://github.com/DomCasmurroPodcast/DomCasmurroPodcast.github.io"
+                >
+                  aqui
+                </Link>
+              </p>
+            </div>
           </div>
+
+          <Image
+            className={styles.imagem_turma}
+            width={600}
+            height={800}
+            alt="imagem 2B"
+            src={"/imgs/img2b2.jpeg"}
+          />
         </div>
       </div>
     </>

@@ -130,23 +130,43 @@
   width: 100%;
   margin-top: 150px;
   padding-top: 40px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr 1fr;
+
+  .footer_texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
   P {
-    font-family: 16px;
+    font-size: 24px;
+    text-align: justify;
+    font-weight: bold;
     font-family: "Roboto", sans-serif;
-    width: 79%;
     margin: auto;
+
+    color: #1e1e1e;
   }
 
   .github_text {
     margin: 18px 0 10px 0;
+
     p {
       text-align: center;
       font-size: 12px;
       color: #263942;
     }
+  }
+
+  .imagem_turma {
+    width: 60%;
+    height: auto;
+    justify-self: center;
+    margin: 0 auto 20px auto;
+    border: 2px solid gray;
+    border-radius: 12px;
   }
 }
 
@@ -171,9 +191,32 @@
       }
     }
   }
+
+  .footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 0.5fr;
+    gap: 8px;
+
+    .imagem_turma {
+      width: 80%;
+      margin: 0;
+    }
+  }
+
+  .footer_texto {
+    p {
+      font-size: 16px;
+      margin: 0;
+      text-align: justify;
+
+      align-self: flex-start;
+    }
+    padding: 12px;
+    grid-row: 3;
+  }
 }
 
-@media (max-width: 400px) {
+@media screen and (max-width: 400px) {
   .firstView {
     h1 {
       font-size: 80px;
@@ -181,7 +224,7 @@
   }
 }
 
-@media (max-width: 350px) {
+@media screen and (max-width: 350px) {
   .firstView {
     h1 {
       font-size: 60px;
