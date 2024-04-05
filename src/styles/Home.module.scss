@@ -1,3 +1,7 @@
+.bodyContainer {
+  overflow-x: hidden;
+}
+
 .firstView {
   display: flex;
   height: 100vh;
@@ -8,7 +12,7 @@
   h1 {
     font-family: "DM Serif Text", "Roboto", serif;
     color: #263942;
-    font-size: 164px;
+    font-size: 60px;
     text-align: center;
     justify-self: center;
     align-self: center;
@@ -87,7 +91,7 @@
       max-width: 1200px;
       width: 79%;
       margin: auto;
-      
+
       h3 {
         font-size: 32px;
         font-weight: 300;
@@ -99,79 +103,142 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        row-gap: 30px;
 
+        row-gap: 30px;
+      }
+
+      ::after {
+        width: 270px;
+        content: "";
+        display: auto;
+      }
+
+      @media (min-width: 1370px) {
+        ::after {
+          width: 578px;
+          content: "";
+          display: auto;
+        }
       }
     }
 
-    .resultadosPesquisa{
+    .resultadosPesquisa {
       width: 100%;
     }
   }
 }
 
 //footer
-.footer{
+.footer {
   background-color: #abbac2;
   width: 100%;
   margin-top: 150px;
-  padding-top: 60px;
-  display: flex;
-  flex-direction: column;
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr 1fr;
 
-  P{
-    font-family: 16px;
-    font-family: "Roboto", sans-serif;
-    width: 79%;
-    margin: auto;
+  .footer_texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  .gitHub_link{
+  P {
+    font-size: 24px;
+    text-align: justify;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
     margin: auto;
+
+    color: #1e1e1e;
+  }
+
+  .github_text {
+    margin: 18px 0 10px 0;
+
+    p {
+      text-align: center;
+      font-size: 12px;
+      color: #263942;
+    }
+  }
+
+  .imagem_turma {
+    width: 60%;
+    height: auto;
+    justify-self: center;
+    margin: 0 auto 20px auto;
+    border: 2px solid gray;
+    border-radius: 12px;
   }
 }
 
 //mobile
 
 @media (max-width: 700px) {
-
-  .firstView{
-    h1{
+  .firstView {
+    h1 {
       font-size: 100px;
     }
   }
 
-  .todosEpisodios{
-
-    h3{
+  .todosEpisodios {
+    h3 {
       text-align: center;
     }
 
-  .todosEpisodios_list{
-    justify-content: center;
-    .episodioButton_container{
-      margin: auto;
+    .todosEpisodios_list {
+      justify-content: center;
+      .episodioButton_container {
+        margin: auto;
+      }
     }
-
   }
 
-}
-  
+  .footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 0.5fr;
+    gap: 8px;
+
+    .imagem_turma {
+      width: 80%;
+      margin: 0;
+    }
+  }
+
+  .footer_texto {
+    p {
+      font-size: 16px;
+      margin: 0;
+      text-align: justify;
+
+      align-self: flex-start;
+    }
+    padding: 12px;
+    grid-row: 3;
+  }
 }
 
-@media (max-width: 400px) {
+@media screen and (min-width: 700px) {
+  .firstView {
+    h1 {
+      font-size: 164px;
+    }
+  }
+}
 
-  .firstView{
-    h1{
+@media screen and (max-width: 400px) {
+  .firstView {
+    h1 {
       font-size: 80px;
     }
   }
 }
 
-@media (max-width: 350px) {
-
-  .firstView{
-    h1{
+@media screen and (max-width: 350px) {
+  .firstView {
+    h1 {
       font-size: 60px;
     }
   }

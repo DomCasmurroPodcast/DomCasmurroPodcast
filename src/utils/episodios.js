@@ -3,7 +3,9 @@ const Episódios = [
     id: 1,
     nome: "Episódio 1",
     audioSrc:
+
       "ep1.mp3",
+
     capitulos: "1, 2, 3, 4, 5",
     alunos: "Amanda, Bruna",
     descricao:
@@ -14,7 +16,9 @@ const Episódios = [
     id: 2,
     nome: "Episódio 2",
     audioSrc:
+
       "ep2.mp3",
+
     capitulos: "6, 7, 8, 9, 10, 11",
     alunos: "Ana Carolina, Vitória Gonçalvez, Wanda Pereira",
     descricao:
@@ -25,7 +29,9 @@ const Episódios = [
     id: 3,
     nome: "Episódio 3",
     audioSrc:
+
       "ep3.mp3",
+
     capitulos: "12, 13, 14, 15, 16, 17",
     alunos: "Emylly Samylly, Laís Amaro, João Phelipe",
     descricao:
@@ -36,7 +42,9 @@ const Episódios = [
     id: 4,
     nome: "Episódio 4",
     audioSrc:
+
       "ep4.mp3",
+
     capitulos: "18, 19, 20, 21, 22",
     alunos: "Patrícia O. Silva, Leonardo Pereira",
     descricao:
@@ -47,7 +55,9 @@ const Episódios = [
     id: 5,
     nome: "Episódio 5",
     audioSrc:
+
       "ep5.m4a",
+
     capitulos: "23, 24, 25, 26, 27",
     alunos: "Anna Clara, Andressa",
     descricao:
@@ -58,7 +68,9 @@ const Episódios = [
     id: 6,
     nome: "Episódio 6",
     audioSrc:
+
       "ep6.m4a",
+
     capitulos: "28, 29, 30, 31, 32",
     alunos: "Keila R. Silva, Caliane Antonielly",
     descricao:
@@ -69,7 +81,9 @@ const Episódios = [
     id: 7,
     nome: "Episódio 7",
     audioSrc:
+
       "ep7.m4a",
+
     capitulos: "33, 34, 35, 36, 37",
     alunos: "Beatriz Oliveira, Dáfeli",
     descricao:
@@ -80,7 +94,9 @@ const Episódios = [
     id: 8,
     nome: "Episódio 8",
     audioSrc:
+
       "ep8.mp4",
+
     capitulos: "38, 39, 40, 41, 42",
     alunos: "Uédina Clarice, Nicole Eduarda",
     descricao:
@@ -91,7 +107,9 @@ const Episódios = [
     id: 9,
     nome: "Episódio 9",
     audioSrc:
+
       "ep9.mpeg",
+
     capitulos: "43, 44, 45, 46, 47, 48",
     alunos: "Anne Luize, Marcos, Karoline",
     descricao:
@@ -102,7 +120,9 @@ const Episódios = [
     id: 10,
     nome: "Episódio 10",
     audioSrc:
+
       "ep10.mp3",
+
     capitulos: "49, 50, 51, 52, 53",
     alunos: "Fernanda Gonçalves, Luan",
     descricao:
@@ -113,7 +133,9 @@ const Episódios = [
     id: 11,
     nome: "Episódio 11",
     audioSrc:
+
       "ep11.mp3",
+
     capitulos: "54, 55, 56, 57, 58",
     alunos: "Diego, João Pedro, Uéliton",
     descricao:
@@ -124,7 +146,9 @@ const Episódios = [
     id: 12,
     nome: "Episódio 12",
     audioSrc:
+
       "ep12.mp3",
+
     capitulos: "59, 60, 61, 62, 63, 64",
     alunos: "Elias Moreira, Natam Meneght",
     descricao:
@@ -135,7 +159,9 @@ const Episódios = [
     id: 13,
     nome: "Episódio 13",
     audioSrc:
+
       "ep13.mp3",
+
     capitulos: "65, 66, 67, 68, 69, 70",
     alunos: "Amara, Gabriel, Kauã,",
     descricao: "(Sem descrição)",
@@ -145,7 +171,9 @@ const Episódios = [
     id: 14,
     nome: "Episódio 14",
     audioSrc:
+
       "ep14.mp3",
+
     capitulos: "71, 72, 73, 74, 75, 76",
     alunos: "Alisson Dias, Thauan Wictor",
     descricao:
@@ -157,6 +185,7 @@ const Episódios = [
     nome: "Episódio 15",
     audioSrc:
       "ep15.m4a",
+
     capitulos: "77, 78, 79, 80, 81, 82",
     alunos: "Edmara, Suellen",
     descricao:
@@ -168,6 +197,7 @@ const Episódios = [
     nome: "Episódio 16",
     audioSrc:
       "ep16.mp3",
+
     capitulos: "83, 84, 85, 86, 87, 88",
     alunos: "Sidnei Salustiano, Pedro Baltazar, Erick Brayan",
     descricao:
@@ -179,6 +209,7 @@ const Episódios = [
     nome: "Episódio 17",
     audioSrc:
       "ep17.ogg",
+
     capitulos: "89, 90, 91, 92, 93, 94",
     alunos: "Luiz Guilhermy, Adrielle",
     descricao:
@@ -190,6 +221,7 @@ const Episódios = [
     nome: "Episódio 18",
     audioSrc:
       "ep18.m4a",
+
     capitulos: "95, 96, 97, 98, 99, 100",
     alunos: "Janine, Júlia Eduarda",
     descricao:
@@ -201,6 +233,7 @@ const Episódios = [
     nome: "Episódio 19",
     audioSrc:
       "ep19.m4a",
+
     capitulos: "101, 102, 103, 104, 105, 106",
     alunos: "Rafaela, Matheus Bassi, Max",
     descricao: "(Sem descrição)",
@@ -211,6 +244,7 @@ const Episódios = [
     nome: "Episódio 20",
     audioSrc:
       "ep20.mp3",
+
     capitulos: "107, 108, 109, 110, 111, 112",
     alunos: "Eduardo Fernandes, Mateus Orocondo, Yan Fernando",
     descricao: "(Sem descrição)",
@@ -221,6 +255,7 @@ const Episódios = [
     nome: "Episódio 21",
     audioSrc:
       "ep21.m4a",
+
     capitulos: "113, 114, 115, 116, 117, 118",
     alunos: "Emilly Lemes, Dalila",
     descricao:
@@ -232,6 +267,7 @@ const Episódios = [
     nome: "Episódio 22",
     audioSrc:
       "ep22.mp3",
+
     capitulos: "119, 120, 121, 122, 123, 124",
     alunos: "Pedro Noemerg, Aline Noemerg",
     descricao:
@@ -243,6 +279,7 @@ const Episódios = [
     nome: "Episódio 23",
     audioSrc:
       "ep23.mp3",
+
     capitulos: "125, 126, 127, 128, 129, 130",
     alunos: "Dayane, Alana",
     descricao: "(Sem descrição)",
@@ -253,6 +290,7 @@ const Episódios = [
     nome: "Episódio 24",
     audioSrc:
       "ep24.m4a",
+
     capitulos: "131, 132, 133, 134, 135, 136",
     alunos: "Emanuel, Henrique",
     descricao:
@@ -264,6 +302,7 @@ const Episódios = [
     nome: "Episódio 25",
     audioSrc:
       "ep25.m4a",
+
     capitulos: "137, 138, 139, 140, 141, 142",
     alunos: "Gabriely, Tamires",
     descricao:
@@ -275,6 +314,7 @@ const Episódios = [
     nome: "Episódio 26",
     audioSrc:
       "ep26.mp3",
+
     capitulos: "143, 144, 145, 146, 147, 148",
     alunos: "Tarcísio, Leonardo Neiva",
     descricao:
@@ -284,3 +324,4 @@ const Episódios = [
 ];
 
 export default Episódios;
+

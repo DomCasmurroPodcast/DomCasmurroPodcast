@@ -8,11 +8,11 @@ import { useRef, useState } from "react";
 import Image from "next/image";
 
 export default function Home() {
-  const ref = useRef(null)
+  const ref = useRef(null);
   const [searchValue, setSearchValue] = useState("");
 
   const handleClick = () => {
-    ref.current?.scrollIntoView({ behavior: 'smooth' });
+    ref.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -68,11 +68,46 @@ export default function Home() {
         </div>
 
         <div className={styles.footer}>
-          <p>Sed ullamcorper nunc in viverra tempus. Ut consectetur libero ac ipsum efficitur, sed bibendum nisi tincidunt. Quisque pretium elit quis nisi consectetur faucibus. Duis ac purus non risus faucibus maximus. Proin egestas, sapien eu hendrerit hendrerit, erat magna bibendum eros, vitae scelerisque erat turpis quis metus. Quisque in metus dui. Ut at efficitur tellus. Nulla malesuada ante diam, eu suscipit mauris consectetur sit amet. Aenean neque est, accumsan non elementum vel, blandit et purus. Duis eu vehicula mi, a dictum sem. Etiam mauris velit, eleifend vitae porttitor eu, sagittis sit amet sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec vel pharetra nibh. Donec ac accumsan tortor. Sed ut suscipit augue, ac tincidunt quam. Vivamus vitae dui interdum, mattis eros vitae, euismod urna.</p>
-          <Link title="Veja código da página no GitHub" className={styles.gitHub_link} href="https://github.com/DomCasmurroPodcast/DomCasmurroPodcast.github.io">
-            <Image className={styles.gitHub_image} src="/imgs/GitHub_Logo.png" width={100} height={50} alt="Veja código no GitHub"/>
-            
-          </Link>
+          <Image
+            className={styles.imagem_turma}
+            width={600}
+            height={800}
+            alt="imagem 2A"
+            src={"/imgs/img2a2.jpeg"}
+          />
+          <div className={styles.footer_texto}>
+            <p>
+              Este projeto de ensino visa trabalhar/apresentar o gênero Podcast
+              contextualizado a partir de uma atividade de retextualização de um
+              clássico da Literatura Brasileira, o livro do Realismo literário,
+              Dom Casmurro de Machado de Assis. O projeto foi realizado com os
+              alunos do 2º A e B do Curso Técnico Integrado em Informática
+              (Ensino Médio), turnos da manhã e tarde, do Instituto Federal de
+              Educação, Ciência e Tecnologia de Rondônia, campus Vilhena,
+              situado na BR-174, Km 3 S/n - Zona Urbana, Vilhena.
+            </p>
+
+            <div className={styles.github_text}>
+              <p>
+                Veja o código da página{" "}
+                <Link
+                  title="Veja código da página no GitHub"
+                  className={styles.gitHub_link}
+                  href="https://github.com/DomCasmurroPodcast/DomCasmurroPodcast.github.io"
+                >
+                  aqui
+                </Link>
+              </p>
+            </div>
+          </div>
+
+          <Image
+            className={styles.imagem_turma}
+            width={600}
+            height={800}
+            alt="imagem 2B"
+            src={"/imgs/img2b2.jpeg"}
+          />
         </div>
       </div>
     </>
